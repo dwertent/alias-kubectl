@@ -45,3 +45,6 @@ alias kcns='kubectl config set-context --current --namespace'
 alias kcurrent='kubectl config current-context'
 alias kcg='kubectl config get-contexts'
 alias kcs='kubectl config set-context'
+
+# debug
+alias kubectldebug='kubectl run -i --tty --rm debug --image=bash --restart=Never -- bash'
