@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# <kubectl><command><kind> ->
-# config
-alias kcns='kubectl config set-context --current --namespace'
-alias kcurrent='kubectl config current-context'
-alias kcg='kubectl config get-contexts'
-alias kcs='kubectl config set-context'
-
-alias kl='kubectl logs'
-
 # other
 alias k='kubectl'
 alias kl='kubectl logs'
@@ -48,3 +39,9 @@ alias kers='kubectl edit rs'
 alias kess='kubectl edit ss'
 alias keds='kubectl edit ds'
 alias kes='kubectl edit svc'
+
+# config
+alias kcns='kubectl config set-context --current --namespace'
+alias kcurrent='kubectl config current-context'
+alias kcg='kubectl config get-contexts'
+alias kcs='kubectl config set-context'
