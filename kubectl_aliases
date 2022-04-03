@@ -1,0 +1,50 @@
+#!/bin/bash
+
+# <kubectl><command><kind> ->
+# config
+alias kcns='kubectl config set-context --current --namespace'
+alias kcurrent='kubectl config current-context'
+alias kcg='kubectl config get-contexts'
+alias kcs='kubectl config set-context'
+
+alias kl='kubectl logs'
+
+# other
+alias k='kubectl'
+alias kl='kubectl logs'
+alias kexec='kubectl exec -it'
+
+# get
+alias kgns='kubectl get ns'
+alias kgp='kubectl get pods'
+alias kgd='kubectl get deployments'
+alias kgrs='kubectl get rs'
+alias kgss='kubectl get ss'
+alias kgds='kubectl get ds'
+alias kgs='kubectl get svc -o wide'
+
+# describe
+alias kdesns='kubectl describe ns'
+alias kdesp='kubectl describe pod'
+alias kdesd='kubectl describe deployment'
+alias kdesrs='kubectl describe rs'
+alias kdesss='kubectl describe ss'
+alias kdesds='kubectl describe ds'
+alias kdess='kubectl describe svc'
+
+# delete
+alias kdns='kubectl delete ns'
+alias kdp='kubectl delete pod'
+alias kdd='kubectl delete deployment'
+alias kdrs='kubectl delete rs'
+alias kdss='kubectl delete ss'
+alias kdds='kubectl delete ds'
+alias kds='kubectl delete svc'
+
+# edit
+alias kens='kubectl edit ns'
+alias ked='kubectl edit deployment'
+alias kers='kubectl edit rs'
+alias kess='kubectl edit ss'
+alias keds='kubectl edit ds'
+alias kes='kubectl edit svc'
