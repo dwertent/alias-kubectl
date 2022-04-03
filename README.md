@@ -13,7 +13,7 @@ e.g.
 * `kubectl get deployment`   -> `kgd`
 * `kubectl get replicaset`   -> `kgrs`
 * `kubectl delete pod`       -> `kdp`
-* `kubectl describe service` -> `kds`
+* `kubectl describe service` -> `kdess`
 * `kubectl edit namespace`   -> `kens` 
 
 
