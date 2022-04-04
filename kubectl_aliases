@@ -83,7 +83,7 @@ alias kaci='k auth can-i'
 alias kat='k attach'
 alias ktopall='k top pod --all-namespaces --no-headers --sort-by=cpu | head -20'
 alias ktop='k top pod --no-headers --sort-by=cpu | head -20'
-alias ke="k get events --sort-by='.metadata.creationTimestamp' | tail -100"
+alias kev="k get events --sort-by='.metadata.creationTimestamp' | tail -100"
 
 # get
 alias kg='k get'
