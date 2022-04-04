@@ -57,4 +57,4 @@ alias kcfgsc='kubectl config set-context'
 alias kcfguc='kubectl config use-context'
 
 # debug
-alias kubectldebug='kubectl run -i --tty --rm debug --image=bash --restart=Never -- bash'
+alias krdebug='kubectl run -i --tty --rm debug --image=bash --restart=Never -- bash'
