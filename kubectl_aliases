@@ -5,7 +5,7 @@ alias k='kubectl'
 alias kl='kubectl logs'
 alias kexec='kubectl exec -it'
 alias kpf='kubectl port-forward'
-alias kci='kubectl auth can-i'
+alias kaci='kubectl auth can-i'
 alias kat='kubectl attach'
 
 # get
