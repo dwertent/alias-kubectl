@@ -4,6 +4,9 @@
 alias k='kubectl'
 alias kl='kubectl logs'
 alias kexec='kubectl exec -it'
+alias kpf='kubectl port-forward'
+alias kaci='kubectl auth can-i'
+alias kat='kubectl attach'
 
 # get
 alias kg='kubectl get'
@@ -14,6 +17,7 @@ alias kgrs='kubectl get rs'
 alias kgss='kubectl get ss'
 alias kgds='kubectl get ds'
 alias kgs='kubectl get svc -o wide'
+alias kgn='kubectl get nodes -o wide'
 
 # describe
 alias kdes='kubectl describe'
