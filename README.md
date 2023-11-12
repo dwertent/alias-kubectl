@@ -47,24 +47,24 @@ Clone project and add to `~/.bashrc` file ->
 
 | alias | command |
 | --- | --- |
-| `ke` | `kubectl get` |
-| `kens` | `kubectl get namespaces` |
-| `kep` | `kubectl get pods` |
-| `ked` | `kubectl get deployments` |
-| `kes` | `kubectl get secret` |
-| `kers` | `kubectl get replicasets` |
-| `kess` | `kubectl get statefulsets` |
-| `keds` | `kubectl get daemonsets` |
-| `kesvc` | `kubectl get services -o wide` |
-| `ken` | `kubectl get nodes -o wide` |
-| `kecm` | `kubectl get configmaps` |
-| `kecj` | `kubectl get cronjobs` |
-| `kej` | `kubectl get jobs` |
-| `kesa` | `kubectl get serviceaccounts` |
-| `ker` | `kubectl get roles` |
-| `kerb` | `kubectl get rolebindings` |
-| `kecr` | `kubectl get clusterroles` |
-| `kecrb` | `kubectl get clusterrolebindings` |
+| `kg` | `kubectl get` |
+| `kgns` | `kubectl get namespaces` |
+| `kgp` | `kubectl get pods` |
+| `kgd` | `kubectl get deployments` |
+| `kgs` | `kubectl get secret` |
+| `kgrs` | `kubectl get replicasets` |
+| `kgss` | `kubectl get statefulsets` |
+| `kgds` | `kubectl get daemonsets` |
+| `kgsvc` | `kubectl get services -o wide` |
+| `kgn` | `kubectl get nodes -o wide` |
+| `kgcm` | `kubectl get configmaps` |
+| `kgcj` | `kubectl get cronjobs` |
+| `kgj` | `kubectl get jobs` |
+| `kgsa` | `kubectl get serviceaccounts` |
+| `kgr` | `kubectl get roles` |
+| `kgrb` | `kubectl get rolebindings` |
+| `kgcr` | `kubectl get clusterroles` |
+| `kgcrb` | `kubectl get clusterrolebindings` |
  
 #### DESCRIBE
 

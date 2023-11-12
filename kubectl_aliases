@@ -29,7 +29,7 @@ alias kgrb='kubectl get rolebindings'
 alias kgcr='kubectl get clusterroles'
 alias kgrb='kubectl get clusterrolebindings'
 alias kgsa='kubectl get sa'
-alias kgnet='kubectl get netpol'
+alias kgnp='kubectl get netpol'
 
 # edit
 alias ke='kubectl edit'
@@ -43,11 +43,10 @@ alias kesvc='kubectl edit svc'
 alias kecm='kubectl edit cm'
 alias kecj='kubectl edit cj'
 alias ker='kubectl edit roles'
-alias kerb='kubectl edit rolebindings'
 alias kecr='kubectl edit clusterroles'
 alias kerb='kubectl edit clusterrolebindings'
 alias kesa='kubectl edit sa'
-alias kenet='kubectl edit netpol'
+alias kenp='kubectl edit netpol'
 
 # describe
 alias kd='kubectl describe'
@@ -67,7 +66,7 @@ alias kdr='kubectl describe roles'
 alias kdrb='kubectl describe rolebindings'
 alias kdcr='kubectl describe clusterroles'
 alias kdcrb='kubectl describe clusterrolebindings'
-alias kdnet='kubectl describe netpol'
+alias kdnp='kubectl describe netpol'
 
 # delete
 alias kdel='kubectl delete'
@@ -87,7 +86,7 @@ alias kdelrb='kubectl delete rolebindings'
 alias kdelcr='kubectl delete clusterroles'
 alias kdelrb='kubectl delete clusterrolebindings'
 alias kdelsa='kubectl delete sa'
-alias kdelnet='kubectl delete netpol'
+alias kdelnp='kubectl delete netpol'
 
 # mock
 alias kmock='kubectl create mock -o yaml --dry-run=client'
