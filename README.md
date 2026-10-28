@@ -13,22 +13,28 @@ e.g.
 * `kubectl get deployment`   -> `kgd`
 * `kubectl get replicaset`   -> `kgrs`
 * `kubectl delete pod`       -> `kdp`
-* `kubectl describe service` -> `kdess`
+* `kubectl describe service` -> `kdsvc`
 * `kubectl edit namespace`   -> `kens` 
 
 
 ### Usage
 
-Clone project and add to `~/.bashrc` file ->
+Clone the project and source it from your shell's startup file:
 
 1. Clone repo
-1. `vim ~/.bashrc`
-3. paste (edit file location):
+2. Pick the startup file for your shell (macOS defaults to zsh):
+    * zsh -> `~/.zshrc`
+    * bash -> `~/.bashrc` (on macOS, `~/.bash_profile`)
+3. Append (edit file location):
     ```
-    if [ -f <path-to-cloned-repo>/kubectl_aliases ]; then
-        source <path-to-cloned-repo>/kubectl_aliases
+    if [ -f <path>/alias-kubectl/kubectl_aliases ]; then
+        source <path>/alias-kubectl/kubectl_aliases
     fi
     ```
+    The path must point to the `kubectl_aliases` file itself, not the repo directory (`-f` is false for a directory, so nothing gets loaded).
+4. Reload with `source ~/.zshrc` (or open a new terminal). Check with `alias k`.
+
+> Use `~/.zshrc` rather than `~/.zprofile` so aliases load in every interactive terminal, not just login shells.
 
 #### BASIC
 
@@ -39,7 +45,7 @@ Clone project and add to `~/.bashrc` file ->
 | `kexec` | `kubectl exec -it` |
 | `kpf` | `kubectl port-forward` |
 | `kaci` | `kubectl auth can-i` |
-| `katt` | `kubectl attach` |
+| `kat` | `kubectl attach` |
 | `kapir` | `kubectl api-resources` |
 | `kapiv` | `kubectl api-versions` |
 
@@ -79,7 +85,6 @@ Clone project and add to `~/.bashrc` file ->
 | `kdss` | `kubectl describe statefulsets` |
 | `kdds` | `kubectl describe daemonsets` |
 | `kdsvc` | `kubectl describe services -o wide` |
-| `kdn` | `kubectl describe nodes -o wide` |
 | `kdcm` | `kubectl describe configmaps` |
 | `kdcj` | `kubectl describe cronjobs` |
 | `kdj` | `kubectl describe jobs` |
@@ -136,9 +141,9 @@ Clone project and add to `~/.bashrc` file ->
 | alias | command |
 | --- | --- |
 | `kmock` | `kubectl create mock -o yaml --dry-run=client` |
-| `kens` | `kubectl create mock -o yaml --dry-run=client namespaces` |
-| `kecm` | `kubectl create mock -o yaml --dry-run=client configmaps` |
-| `kesa` | `kubectl create mock -o yaml --dry-run=client serviceaccounts` |
+| `kmockns` | `kubectl create ns mock -o yaml --dry-run=client` |
+| `kmockcm` | `kubectl create cm mock -o yaml --dry-run=client` |
+| `kmocksa` | `kubectl create sa mock -o yaml --dry-run=client` |
 
 #### CONFIG
 
